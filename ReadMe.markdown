@@ -15,3 +15,8 @@ Therefore, the custom implementation of **GetModuleHandle()** parses the differe
 
 ## Note
 The Dll whose address is to be found should already be loaded in memory or should be loaded using the **LoadLibrary()** API.
+
+## Showcase
+
+![GetModuleHandle](/pic_GetDllBase.png)
+![GetProcAddress](/pic_GetProcAddress.png)
