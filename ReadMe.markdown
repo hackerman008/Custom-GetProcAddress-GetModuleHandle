@@ -3,8 +3,9 @@
 This project aims to provide a custom implementation of commonly used Windows API functions GetProcAddress() and GetModuleHandle() in malware development for Red Teaming/Offensive Security. 
 
 ## Files 
-- Custom.h - this is a standalone file and can be included in projects by the user
-- Custom.c - used to demonstrate the functionality provided in **Custom.h**
+- Main.c - used to demonstrate the functionality provided in **Custom.c**
+- Custom.h - header files with external function declarations
+- Custom.c - contains the function definitions for GetProcAddress__() and GetDllBase__() functions to retrieve API address and DLL address
 - Compile.bat - Compiles the project using the msvc compiler
 
 ## Details
@@ -15,6 +16,8 @@ Therefore, the custom implementation of **GetModuleHandle()** parses the differe
 
 ## Note
 The Dll whose address is to be found should already be loaded in memory or should be loaded using the **LoadLibrary()** API.
+
+To use the files include the Custom.h and Custom.c file in your project and compile the Custom.c file alongside other source files.
 
 ## Showcase
 
